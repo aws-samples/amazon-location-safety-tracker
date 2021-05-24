@@ -7,6 +7,10 @@ With Amazon Location Service, you can easily add capabilities such as maps, poin
 ## Architecture Overview
 <img src="/images/architecture.png"/> 
 
+## Stack
+- **Front-end** - SwiftUI, iOS 12+, AWS Amplify for authentication/authorization and API communication, AWS SDK for Amazon Location Service APIs
+- **Backend** - Amazon Location Service, Amazon EventBridge, Amazon Cognito, AWS AppSync, and Amazon DynamoDB
+
 #### Prerequisites
 
 For this walkthrough, you should have the following prerequisites: 
