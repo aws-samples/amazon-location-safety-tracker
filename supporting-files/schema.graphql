@@ -1,0 +1,10 @@
+type User @model @auth(
+    rules: [
+      { allow: private, provider: userPools, operations: [read, update] },
+      { allow: private, provider: iam, operations: [read, update] }
+    ]
+  ) {
+  id: ID!
+  username: String!
+  isSafe: Boolean
+}

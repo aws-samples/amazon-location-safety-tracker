@@ -1,0 +1,23 @@
+{
+  "version": "0",
+  "id": "aa11aa22-33a-4a4a-aaa5-example",
+  "detail-type": "Location Geofence Event",
+  "source": "aws.geo",
+  "account": "636103698109",
+  "time": "2020-11-10T23:43:37Z",
+  "region": "eu-west-1",
+  "resources": [
+    "arn:aws:geo:eu-west-1:0123456789101:geofence-collection/GeofenceEvents-GeofenceCollection_EXAMPLE",
+    "arn:aws:geo:eu-west-1:0123456789101:tracker/Tracker_EXAMPLE"
+  ],
+  "detail": {
+    "EventType": "EXIT",
+    "GeofenceId": "polygon_14",
+    "DeviceId": "5dfbaa90-8fc8-499b-b66e-e0a3e791a7ab",
+    "SampleTime": "2020-11-10T23:43:37.531Z",
+    "Position": [
+      -123.12390073297821,
+      49.23433613216247
+    ]
+  }
+}

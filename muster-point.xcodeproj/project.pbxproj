@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26FCD7E6C9AA4CBE9FD38C2C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FF257EC3D7E345F19B3B469D /* awsconfiguration.json */; };
+		761AA5CF264E569700B0B006 /* muster_point_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AA5CE264E569700B0B006 /* muster_point_clientApp.swift */; };
+		761AA5D1264E569700B0B006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AA5D0264E569700B0B006 /* ContentView.swift */; };
+		761AA5D3264E569A00B0B006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761AA5D2264E569A00B0B006 /* Assets.xcassets */; };
+		761AA5D6264E569A00B0B006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761AA5D5264E569A00B0B006 /* Preview Assets.xcassets */; };
+		761AA5E4264E56B800B0B006 /* muster_point_patrolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AA5E3264E56B800B0B006 /* muster_point_patrolApp.swift */; };
+		761AA5E6264E56B800B0B006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AA5E5264E56B800B0B006 /* ContentView.swift */; };
+		761AA5E8264E56BA00B0B006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761AA5E7264E56BA00B0B006 /* Assets.xcassets */; };
+		761AA5EB264E56BA00B0B006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761AA5EA264E56BA00B0B006 /* Preview Assets.xcassets */; };
+		76F46B78264E6C3E00FE7C77 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = CC485CB48C7D44F8B0AD1962 /* amplifyconfiguration.json */; };
+		76F46B79264E6C4000FE7C77 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FF257EC3D7E345F19B3B469D /* awsconfiguration.json */; };
+		76F46B7A264E73B100FE7C77 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1913B60BF2742CAB59F87B1 /* AmplifyModels.swift */; };
+		76F46B7B264E73B300FE7C77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2F4BBE526472F8F722CC3 /* User.swift */; };
+		76F46B7C264E73B500FE7C77 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FA586D6FA44F4A344C69E /* User+Schema.swift */; };
+		76F46B7D264E73EC00FE7C77 /* User+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB3166264E5957000BD5A3 /* User+Extensions.swift */; };
+		76FB315E264E5935000BD5A3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB315C264E5935000BD5A3 /* AuthService.swift */; };
+		76FB315F264E5935000BD5A3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB315C264E5935000BD5A3 /* AuthService.swift */; };
+		76FB3160264E5935000BD5A3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB315D264E5935000BD5A3 /* SignInView.swift */; };
+		76FB3161264E5935000BD5A3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB315D264E5935000BD5A3 /* SignInView.swift */; };
+		76FB3167264E5957000BD5A3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB3162264E5953000BD5A3 /* LocationManager.swift */; };
+		76FB3168264E5957000BD5A3 /* GeofenceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB3163264E5954000BD5A3 /* GeofenceHandler.swift */; };
+		76FB3169264E5957000BD5A3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB3164264E5955000BD5A3 /* MapView.swift */; };
+		76FB316A264E5957000BD5A3 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB3165264E5956000BD5A3 /* SessionView.swift */; };
+		76FB316B264E5957000BD5A3 /* User+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB3166264E5957000BD5A3 /* User+Extensions.swift */; };
+		84B1E288096848E0A5742A98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2F4BBE526472F8F722CC3 /* User.swift */; };
+		96C0DC1E7C36B8FB6F68F530 /* Pods_muster_muster_point_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D36572E277C02E543CB6A14 /* Pods_muster_muster_point_client.framework */; };
+		A400F9875D5049E6A4168582 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FA586D6FA44F4A344C69E /* User+Schema.swift */; };
+		B87DC6542CBD4FEF88F1A6FB /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = CC485CB48C7D44F8B0AD1962 /* amplifyconfiguration.json */; };
+		BFA2C6C2FA0A4643AB667016 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1913B60BF2742CAB59F87B1 /* AmplifyModels.swift */; };
+		F841152AA1103FBFA620272F /* Pods_muster_muster_point_patrol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F52ABDB07B08F9E70AD633C /* Pods_muster_muster_point_patrol.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09A2F4BBE526472F8F722CC3 /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		231718A85CCD4E09BB73385F /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		4209F43F234A43BBB58B5885 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/musterPointLocationApi/schema.graphql; sourceTree = "<group>"; };
+		4D36572E277C02E543CB6A14 /* Pods_muster_muster_point_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muster_muster_point_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		501827B26783F5FE89394500 /* Pods-muster-muster-point-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muster-muster-point-client.debug.xcconfig"; path = "Target Support Files/Pods-muster-muster-point-client/Pods-muster-muster-point-client.debug.xcconfig"; sourceTree = "<group>"; };
+		680BD4ECAD92D11A511BE843 /* Pods-muster-muster-point-patrol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muster-muster-point-patrol.release.xcconfig"; path = "Target Support Files/Pods-muster-muster-point-patrol/Pods-muster-muster-point-patrol.release.xcconfig"; sourceTree = "<group>"; };
+		761AA5CB264E569700B0B006 /* muster-point-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muster-point-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761AA5CE264E569700B0B006 /* muster_point_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muster_point_clientApp.swift; sourceTree = "<group>"; };
+		761AA5D0264E569700B0B006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		761AA5D2264E569A00B0B006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		761AA5D5264E569A00B0B006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		761AA5D7264E569A00B0B006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761AA5E1264E56B800B0B006 /* muster-point-patrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muster-point-patrol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761AA5E3264E56B800B0B006 /* muster_point_patrolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muster_point_patrolApp.swift; sourceTree = "<group>"; };
+		761AA5E5264E56B800B0B006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		761AA5E7264E56BA00B0B006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		761AA5EA264E56BA00B0B006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		761AA5EC264E56BA00B0B006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FB315C264E5935000BD5A3 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		76FB315D264E5935000BD5A3 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		76FB3162264E5953000BD5A3 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		76FB3163264E5954000BD5A3 /* GeofenceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceHandler.swift; sourceTree = "<group>"; };
+		76FB3164264E5955000BD5A3 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		76FB3165264E5956000BD5A3 /* SessionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		76FB3166264E5957000BD5A3 /* User+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Extensions.swift"; sourceTree = "<group>"; };
+		7F52ABDB07B08F9E70AD633C /* Pods_muster_muster_point_patrol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muster_muster_point_patrol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC4E5B592E0750FFFB42FAF /* Pods-muster-muster-point-patrol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muster-muster-point-patrol.debug.xcconfig"; path = "Target Support Files/Pods-muster-muster-point-patrol/Pods-muster-muster-point-patrol.debug.xcconfig"; sourceTree = "<group>"; };
+		CC485CB48C7D44F8B0AD1962 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		D04FA586D6FA44F4A344C69E /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		D2320027540C99E49F7AE686 /* Pods-muster-muster-point-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muster-muster-point-client.release.xcconfig"; path = "Target Support Files/Pods-muster-muster-point-client/Pods-muster-muster-point-client.release.xcconfig"; sourceTree = "<group>"; };
+		E1913B60BF2742CAB59F87B1 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		FF257EC3D7E345F19B3B469D /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		761AA5C8264E569700B0B006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C0DC1E7C36B8FB6F68F530 /* Pods_muster_muster_point_client.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761AA5DE264E56B800B0B006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F841152AA1103FBFA620272F /* Pods_muster_muster_point_patrol.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		416307A9EACB4771AC0E7674 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				231718A85CCD4E09BB73385F /* amplifytools.xcconfig */,
+				CC485CB48C7D44F8B0AD1962 /* amplifyconfiguration.json */,
+				FF257EC3D7E345F19B3B469D /* awsconfiguration.json */,
+				4209F43F234A43BBB58B5885 /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		42031464F3D2508DBD8D879A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				501827B26783F5FE89394500 /* Pods-muster-muster-point-client.debug.xcconfig */,
+				D2320027540C99E49F7AE686 /* Pods-muster-muster-point-client.release.xcconfig */,
+				BAC4E5B592E0750FFFB42FAF /* Pods-muster-muster-point-patrol.debug.xcconfig */,
+				680BD4ECAD92D11A511BE843 /* Pods-muster-muster-point-patrol.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		761AA5C2264E569600B0B006 = {
+			isa = PBXGroup;
+			children = (
+				88C7C36531FB47F6A31EACAD /* AmplifyModels */,
+				416307A9EACB4771AC0E7674 /* AmplifyConfig */,
+				76FB315B264E5935000BD5A3 /* auth */,
+				761AA5CD264E569700B0B006 /* muster-point-client */,
+				761AA5E2264E56B800B0B006 /* muster-point-patrol */,
+				761AA5CC264E569700B0B006 /* Products */,
+				42031464F3D2508DBD8D879A /* Pods */,
+				EC985D5EF7A4FB70469040C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		761AA5CC264E569700B0B006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				761AA5CB264E569700B0B006 /* muster-point-client.app */,
+				761AA5E1264E56B800B0B006 /* muster-point-patrol.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		761AA5CD264E569700B0B006 /* muster-point-client */ = {
+			isa = PBXGroup;
+			children = (
+				761AA5CE264E569700B0B006 /* muster_point_clientApp.swift */,
+				761AA5D0264E569700B0B006 /* ContentView.swift */,
+				76FB3163264E5954000BD5A3 /* GeofenceHandler.swift */,
+				76FB3162264E5953000BD5A3 /* LocationManager.swift */,
+				76FB3164264E5955000BD5A3 /* MapView.swift */,
+				76FB3165264E5956000BD5A3 /* SessionView.swift */,
+				761AA5D2264E569A00B0B006 /* Assets.xcassets */,
+				761AA5D7264E569A00B0B006 /* Info.plist */,
+				761AA5D4264E569A00B0B006 /* Preview Content */,
+			);
+			path = "muster-point-client";
+			sourceTree = "<group>";
+		};
+		761AA5D4264E569A00B0B006 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				761AA5D5264E569A00B0B006 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		761AA5E2264E56B800B0B006 /* muster-point-patrol */ = {
+			isa = PBXGroup;
+			children = (
+				761AA5E3264E56B800B0B006 /* muster_point_patrolApp.swift */,
+				761AA5E5264E56B800B0B006 /* ContentView.swift */,
+				761AA5E7264E56BA00B0B006 /* Assets.xcassets */,
+				761AA5EC264E56BA00B0B006 /* Info.plist */,
+				761AA5E9264E56BA00B0B006 /* Preview Content */,
+			);
+			path = "muster-point-patrol";
+			sourceTree = "<group>";
+		};
+		761AA5E9264E56BA00B0B006 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				761AA5EA264E56BA00B0B006 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76FB315B264E5935000BD5A3 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				76FB315C264E5935000BD5A3 /* AuthService.swift */,
+				76FB315D264E5935000BD5A3 /* SignInView.swift */,
+				76FB3166264E5957000BD5A3 /* User+Extensions.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		88C7C36531FB47F6A31EACAD /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1913B60BF2742CAB59F87B1 /* AmplifyModels.swift */,
+				09A2F4BBE526472F8F722CC3 /* User.swift */,
+				D04FA586D6FA44F4A344C69E /* User+Schema.swift */,
+			);
+			name = AmplifyModels;
+			path = .;
+			sourceTree = "<group>";
+		};
+		EC985D5EF7A4FB70469040C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D36572E277C02E543CB6A14 /* Pods_muster_muster_point_client.framework */,
+				7F52ABDB07B08F9E70AD633C /* Pods_muster_muster_point_patrol.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		761AA5CA264E569700B0B006 /* muster-point-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761AA5DA264E569A00B0B006 /* Build configuration list for PBXNativeTarget "muster-point-client" */;
+			buildPhases = (
+				4197EDE35A4A3DD686E000D7 /* [CP] Check Pods Manifest.lock */,
+				761AA5C7264E569700B0B006 /* Sources */,
+				761AA5C8264E569700B0B006 /* Frameworks */,
+				761AA5C9264E569700B0B006 /* Resources */,
+				5495652946DD92B6B97F612C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "muster-point-client";
+			productName = "muster-point-client";
+			productReference = 761AA5CB264E569700B0B006 /* muster-point-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		761AA5E0264E56B800B0B006 /* muster-point-patrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761AA5ED264E56BA00B0B006 /* Build configuration list for PBXNativeTarget "muster-point-patrol" */;
+			buildPhases = (
+				BF729C9B24C7CA1E23BC65D8 /* [CP] Check Pods Manifest.lock */,
+				761AA5DD264E56B800B0B006 /* Sources */,
+				761AA5DE264E56B800B0B006 /* Frameworks */,
+				761AA5DF264E56B800B0B006 /* Resources */,
+				6297BDDE0EB4A123F4A31AD1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "muster-point-patrol";
+			productName = "muster-point-patrol";
+			productReference = 761AA5E1264E56B800B0B006 /* muster-point-patrol.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		761AA5C3264E569600B0B006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					761AA5CA264E569700B0B006 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					761AA5E0264E56B800B0B006 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 761AA5C6264E569600B0B006 /* Build configuration list for PBXProject "muster-point" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 761AA5C2264E569600B0B006;
+			productRefGroup = 761AA5CC264E569700B0B006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				761AA5CA264E569700B0B006 /* muster-point-client */,
+				761AA5E0264E56B800B0B006 /* muster-point-patrol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		761AA5C9264E569700B0B006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761AA5D6264E569A00B0B006 /* Preview Assets.xcassets in Resources */,
+				761AA5D3264E569A00B0B006 /* Assets.xcassets in Resources */,
+				B87DC6542CBD4FEF88F1A6FB /* amplifyconfiguration.json in Resources */,
+				26FCD7E6C9AA4CBE9FD38C2C /* awsconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761AA5DF264E56B800B0B006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F46B79264E6C4000FE7C77 /* awsconfiguration.json in Resources */,
+				761AA5EB264E56BA00B0B006 /* Preview Assets.xcassets in Resources */,
+				76F46B78264E6C3E00FE7C77 /* amplifyconfiguration.json in Resources */,
+				761AA5E8264E56BA00B0B006 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4197EDE35A4A3DD686E000D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-muster-muster-point-client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5495652946DD92B6B97F612C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-muster-muster-point-client/Pods-muster-muster-point-client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-muster-muster-point-client/Pods-muster-muster-point-client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-muster-muster-point-client/Pods-muster-muster-point-client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6297BDDE0EB4A123F4A31AD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-muster-muster-point-patrol/Pods-muster-muster-point-patrol-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-muster-muster-point-patrol/Pods-muster-muster-point-patrol-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-muster-muster-point-patrol/Pods-muster-muster-point-patrol-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF729C9B24C7CA1E23BC65D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-muster-muster-point-patrol-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		761AA5C7264E569700B0B006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FB316B264E5957000BD5A3 /* User+Extensions.swift in Sources */,
+				76FB3169264E5957000BD5A3 /* MapView.swift in Sources */,
+				76FB3168264E5957000BD5A3 /* GeofenceHandler.swift in Sources */,
+				76FB315E264E5935000BD5A3 /* AuthService.swift in Sources */,
+				76FB316A264E5957000BD5A3 /* SessionView.swift in Sources */,
+				761AA5D1264E569700B0B006 /* ContentView.swift in Sources */,
+				76FB3167264E5957000BD5A3 /* LocationManager.swift in Sources */,
+				76FB3160264E5935000BD5A3 /* SignInView.swift in Sources */,
+				761AA5CF264E569700B0B006 /* muster_point_clientApp.swift in Sources */,
+				BFA2C6C2FA0A4643AB667016 /* AmplifyModels.swift in Sources */,
+				84B1E288096848E0A5742A98 /* User.swift in Sources */,
+				A400F9875D5049E6A4168582 /* User+Schema.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761AA5DD264E56B800B0B006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F46B7A264E73B100FE7C77 /* AmplifyModels.swift in Sources */,
+				76FB315F264E5935000BD5A3 /* AuthService.swift in Sources */,
+				76F46B7D264E73EC00FE7C77 /* User+Extensions.swift in Sources */,
+				76F46B7B264E73B300FE7C77 /* User.swift in Sources */,
+				76F46B7C264E73B500FE7C77 /* User+Schema.swift in Sources */,
+				761AA5E6264E56B800B0B006 /* ContentView.swift in Sources */,
+				76FB3161264E5935000BD5A3 /* SignInView.swift in Sources */,
+				761AA5E4264E56B800B0B006 /* muster_point_patrolApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		761AA5D8264E569A00B0B006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		761AA5D9264E569A00B0B006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		761AA5DB264E569A00B0B006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501827B26783F5FE89394500 /* Pods-muster-muster-point-client.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"muster-point-client/Preview Content\"";
+				DEVELOPMENT_TEAM = C9FVQFAP43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "muster-point-client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfc.muster-point-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		761AA5DC264E569A00B0B006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2320027540C99E49F7AE686 /* Pods-muster-muster-point-client.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"muster-point-client/Preview Content\"";
+				DEVELOPMENT_TEAM = C9FVQFAP43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "muster-point-client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfc.muster-point-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		761AA5EE264E56BA00B0B006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC4E5B592E0750FFFB42FAF /* Pods-muster-muster-point-patrol.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"muster-point-patrol/Preview Content\"";
+				DEVELOPMENT_TEAM = C9FVQFAP43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "muster-point-patrol/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfc.muster-point-patrol";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		761AA5EF264E56BA00B0B006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680BD4ECAD92D11A511BE843 /* Pods-muster-muster-point-patrol.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"muster-point-patrol/Preview Content\"";
+				DEVELOPMENT_TEAM = C9FVQFAP43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "muster-point-patrol/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfc.muster-point-patrol";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		761AA5C6264E569600B0B006 /* Build configuration list for PBXProject "muster-point" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761AA5D8264E569A00B0B006 /* Debug */,
+				761AA5D9264E569A00B0B006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761AA5DA264E569A00B0B006 /* Build configuration list for PBXNativeTarget "muster-point-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761AA5DB264E569A00B0B006 /* Debug */,
+				761AA5DC264E569A00B0B006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761AA5ED264E56BA00B0B006 /* Build configuration list for PBXNativeTarget "muster-point-patrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761AA5EE264E56BA00B0B006 /* Debug */,
+				761AA5EF264E56BA00B0B006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 761AA5C3264E569600B0B006 /* Project object */;
+}
