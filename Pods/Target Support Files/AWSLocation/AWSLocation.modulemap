@@ -1,6 +1,0 @@
-framework module AWSLocation {
-  umbrella header "AWSLocation-umbrella.h"
-
-  export *
-  module * { export * }
-}
