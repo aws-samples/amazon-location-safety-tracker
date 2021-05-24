@@ -1,7 +1,16 @@
 ## Muster Point Tracker
 
-### Prerequisites
-For this walkthrough, you will need an AWS account.
+#### Prerequisites
+
+For this walkthrough, you should have the following prerequisites: 
+
+*	An AWS account
+*	A MacOS operating system
+*	XCode version 11.4 or later
+*	Node.js v12.x or later 
+*	npm v5.x or later
+*	git v2.14.1 or later
+*	Cocoapods
 
 ### Setting up Amazon Location Services
 
@@ -44,18 +53,6 @@ Now that you have a geofence collection and a tracker, you can link them togethe
 After you link the tracker resource, it will be assigned an **Active** status. Take note of your **Geofence collection** and **Tracker** names.
 
 ### Mobile Clients – AWS Amplify
-
-#### Prerequisites
-
-For this walkthrough, you should have the following prerequisites: 
-
-*	An AWS account
-*	A MacOS operating system
-*	XCode version 11.4 or later
-*	Node.js v12.x or later 
-*	npm v5.x or later
-*	git v2.14.1 or later
-*	Cocoapods
 
 #### Project download and configuration
 
