@@ -1,0 +1,6 @@
+framework module Pods_muster_muster_point_patrol {
+  umbrella header "Pods-muster-muster-point-patrol-umbrella.h"
+
+  export *
+  module * { export * }
+}

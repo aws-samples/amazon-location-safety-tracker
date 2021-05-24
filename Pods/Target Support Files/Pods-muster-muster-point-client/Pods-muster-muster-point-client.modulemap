@@ -1,0 +1,6 @@
+framework module Pods_muster_muster_point_client {
+  umbrella header "Pods-muster-muster-point-client-umbrella.h"
+
+  export *
+  module * { export * }
+}

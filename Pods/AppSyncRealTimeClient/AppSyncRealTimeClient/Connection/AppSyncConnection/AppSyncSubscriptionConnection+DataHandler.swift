@@ -1,0 +1,45 @@
+//
+// Copyright 2018-2021 Amazon.com,
+// Inc. or its affiliates. All Rights Reserved.
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+import Foundation
+
+extension AppSyncSubscriptionConnection {
+
+    func handleDataEvent(response: AppSyncResponse) {
+        guard let subscriptionItem = subscriptionItem else {
+            AppSyncLogger.warn("[AppSyncSubscriptionConnection] \(#function): missing subscription item")
+            return
+        }
+
+        guard response.id == subscriptionItem.identifier else {
+            AppSyncLogger.verbose("""
+                [AppSyncSubscriptionConnection] \(#function): \(subscriptionItem.identifier). Ignoring data event for \(response.id ?? "(null)")
+                """)
+            return
+        }
+
+        switch response.responseType {
+        case .data:
+            let jsonEncode = JSONEncoder()
+            do {
+                let resultData = response.payload
+                let jsonData = try jsonEncode.encode(resultData)
+                subscriptionItem.subscriptionEventHandler(.data(jsonData), subscriptionItem)
+            } catch {
+                AppSyncLogger.error(error)
+                let jsonParserError = ConnectionProviderError.jsonParse(response.id, error)
+                subscriptionItem.subscriptionEventHandler(.failed(jsonParserError), subscriptionItem)
+            }
+        case .subscriptionAck:
+            subscriptionState = .subscribed
+            subscriptionItem.subscriptionEventHandler(.connection(.connected), subscriptionItem)
+        case .unsubscriptionAck:
+            subscriptionState = .notSubscribed
+            subscriptionItem.subscriptionEventHandler(.connection(.disconnected), subscriptionItem)
+        }
+    }
+}

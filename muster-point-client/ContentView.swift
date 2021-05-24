@@ -1,9 +1,5 @@
-//
-//  ContentView.swift
-//  muster-point-client
-//
-//  Created by Rocha Silva, Fernando on 2021-05-13.
-//
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
 
 import SwiftUI
 

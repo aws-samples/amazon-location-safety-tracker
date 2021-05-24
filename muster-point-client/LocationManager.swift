@@ -1,9 +1,5 @@
-//
-//  LocationManager.swift
-//  Amazon Location Service Demo
-//
-//  Created by Rocha Silva, Fernando on 2021-02-03.
-//
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
 import CoreLocation
 import AWSLocation
 import AWSMobileClient

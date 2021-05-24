@@ -1,9 +1,5 @@
-//
-//  SessionView.swift
-//  muster-point-client
-//
-//  Created by Rocha Silva, Fernando on 2021-05-08.
-//
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
 
 import SwiftUI
 import Amplify
