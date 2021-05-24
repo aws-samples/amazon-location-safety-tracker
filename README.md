@@ -11,7 +11,9 @@ With Amazon Location Service, you can easily add capabilities such as maps, poin
 - **Front-end** - SwiftUI, iOS 12+, AWS Amplify for authentication/authorization and API communication, AWS SDK for Amazon Location Service APIs
 - **Backend** - Amazon Location Service, Amazon EventBridge, Amazon Cognito, AWS AppSync, and Amazon DynamoDB
 
-#### Prerequisites
+## Deploying the solution
+
+### Prerequisites
 
 For this walkthrough, you should have the following prerequisites: 
 
@@ -320,7 +322,7 @@ The last piece we need to configure is how we should act when the user crosses a
 7.	Scroll down to *Select targets*, set the target as *Lambda Function*, and set the function you created using the Amplify CLI. If you are following this guide, it should be called **musterPointLocationFunction-dev**.
 8.	Click on *Create*. 
 
-###Test the application
+### Test the application
 
 This solution has two apps: **muster-point-patrol** and **muster-point-client**. Build and run muster-point-client, first. Click the sign in button and create a new account. After that, you will see a map centered in the user’s location alongside the geofences that were created by you, previously.
 
