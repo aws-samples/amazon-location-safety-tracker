@@ -1,5 +1,12 @@
 ## Muster Point Tracker
 
+Location data is a vital ingredient in today's applications, enabling capabilities ranging from asset tracking to location-based marketing.
+
+With Amazon Location Service, you can easily add capabilities such as maps, points of interest, geocoding, routing, geofences, and tracking to applications. You retain control of your location data with Amazon Location, so you can combine proprietary data with data from the service. Amazon Location provides cost-effective location-based services (LBS) using high-quality data from global, trusted providers Esri and HERE Technologies.
+
+## Architecture Overview
+<img src="/images/architecture.png"/> 
+
 #### Prerequisites
 
 For this walkthrough, you should have the following prerequisites: 
