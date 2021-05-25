@@ -70,8 +70,19 @@ After you link the tracker resource, it will be assigned an **Active** status. T
 #### Project download and configuration
 
 1.	Follow the instructions [in this link](https://docs.amplify.aws/start/getting-started/installation/q/integration/ios) to install Amplify and configure the CLI.
-2.	Download or clone the project from the GitHub repository.
-3.	On the main folder, open a terminal and run the following command to install the **Amplify Libraries** and the **AWS Location SDK**:
+2.	Clone this code repository
+
+```
+$ git clone git@github.com:aws-samples/amazon-location-service-musterpoint-tracker-ios.git
+```
+
+3.	Switch to the project's folder
+
+```
+$ cd amazon-location-service-musterpoint-tracker-ios
+```
+
+4.	Run the following command to install the **Amplify Libraries** and the **AWS Location SDK**:
 
 ```
 pod install –repo-update
