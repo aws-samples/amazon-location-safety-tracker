@@ -1,25 +1,24 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: MIT-0
 
+import Amplify
+import Combine
 import Foundation
 import SwiftUI
-import Combine
-import Amplify
 
 struct ContentView: View {
-    
     @EnvironmentObject var auth: AuthService
-    
+
     @State var users = [User]()
     @State var postsSubscription: AnyCancellable?
-    
+
     var body: some View {
-        VStack{
+        VStack {
             List {
                 ForEach(users) { user in
-                    VStack{
+                    VStack {
                         Spacer()
-                        HStack{
+                        HStack {
                             Spacer()
                             Text(user.username)
                                 .font(.system(size: 50))
@@ -27,11 +26,11 @@ struct ContentView: View {
                             Spacer()
                         }
                         .frame(
-                                minWidth: 0,
-                                maxWidth: .infinity,
-                                minHeight: 180,
-                                maxHeight: 180,
-                                alignment: .center
+                            minWidth: 0,
+                            maxWidth: .infinity,
+                            minHeight: 180,
+                            maxHeight: 180,
+                            alignment: .center
                         )
                         .background(user.isSafe! ? Color.green : Color.red)
                         Spacer()
@@ -40,20 +39,20 @@ struct ContentView: View {
             }
             Spacer()
             Button("Sign Out", action: auth.signOut)
-        }.onAppear{
+        }.onAppear {
             observeUsers()
             queryUsers()
         }
     }
-    
+
     func queryUsers() {
         let u = User.keys
         Amplify.DataStore.query(User.self) {
             result in
             switch result {
-            case . success(let users):
+            case let .success(users):
                 self.users = users
-            case .failure(let error):
+            case let .failure(error):
                 print(error)
             }
         }
@@ -66,11 +65,10 @@ struct ContentView: View {
                     print("Subscription received error - \(error.localizedDescription)")
                 }
             }
-            receiveValue: { changes in
-                // handle incoming changes
-                print("Subscription received mutation: \(changes)")
-                queryUsers()
-            }
+        receiveValue: { changes in
+            // handle incoming changes
+            print("Subscription received mutation: \(changes)")
+            queryUsers()
+        }
     }
-
 }

@@ -5,19 +5,17 @@ import AmplifyPlugins
 
 import SwiftUI
 
-
 @main
 struct muster_point_patrolApp: App {
-    
     @ObservedObject var auth = AuthService()
-    
-    init () {
+
+    init() {
         configureAmplify()
-        
+
         auth.checkSessionStatus()
         auth.observeAuthEvents()
     }
-    
+
     var body: some Scene {
         WindowGroup {
             if auth.isSignedIn {
@@ -27,16 +25,16 @@ struct muster_point_patrolApp: App {
             }
         }
     }
-    
-    func configureAmplify(){
+
+    func configureAmplify() {
         do {
             Amplify.Logging.logLevel = .warn
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
-            
+
             let dataStorePlugin = AWSDataStorePlugin(modelRegistration: AmplifyModels())
             try Amplify.add(plugin: dataStorePlugin)
             try Amplify.add(plugin: AWSAPIPlugin())
-            
+
             try Amplify.configure()
             print("Amplify configured")
         } catch {
