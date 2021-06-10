@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		761AA5CF264E569700B0B006 /* muster_point_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AA5CE264E569700B0B006 /* muster_point_clientApp.swift */; };
-		761AA5D1264E569700B0B006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AA5D0264E569700B0B006 /* ContentView.swift */; };
 		761AA5D3264E569A00B0B006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761AA5D2264E569A00B0B006 /* Assets.xcassets */; };
 		761AA5D6264E569A00B0B006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761AA5D5264E569A00B0B006 /* Preview Assets.xcassets */; };
 		761AA5E4264E56B800B0B006 /* muster_point_patrolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AA5E3264E56B800B0B006 /* muster_point_patrolApp.swift */; };
@@ -35,7 +34,6 @@
 		680BD4ECAD92D11A511BE843 /* Pods-muster-muster-point-patrol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muster-muster-point-patrol.release.xcconfig"; path = "Target Support Files/Pods-muster-muster-point-patrol/Pods-muster-muster-point-patrol.release.xcconfig"; sourceTree = "<group>"; };
 		761AA5CB264E569700B0B006 /* muster-point-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muster-point-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761AA5CE264E569700B0B006 /* muster_point_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muster_point_clientApp.swift; sourceTree = "<group>"; };
-		761AA5D0264E569700B0B006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		761AA5D2264E569A00B0B006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		761AA5D5264E569A00B0B006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		761AA5D7264E569A00B0B006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				761AA5CE264E569700B0B006 /* muster_point_clientApp.swift */,
-				761AA5D0264E569700B0B006 /* ContentView.swift */,
 				76FB3163264E5954000BD5A3 /* GeofenceHandler.swift */,
 				76FB3162264E5953000BD5A3 /* LocationManager.swift */,
 				76FB3164264E5955000BD5A3 /* MapView.swift */,
@@ -361,7 +358,6 @@
 				76FB3168264E5957000BD5A3 /* GeofenceHandler.swift in Sources */,
 				76FB315E264E5935000BD5A3 /* AuthService.swift in Sources */,
 				76FB316A264E5957000BD5A3 /* SessionView.swift in Sources */,
-				761AA5D1264E569700B0B006 /* ContentView.swift in Sources */,
 				76FB3167264E5957000BD5A3 /* LocationManager.swift in Sources */,
 				76FB3160264E5935000BD5A3 /* SignInView.swift in Sources */,
 				761AA5CF264E569700B0B006 /* muster_point_clientApp.swift in Sources */,

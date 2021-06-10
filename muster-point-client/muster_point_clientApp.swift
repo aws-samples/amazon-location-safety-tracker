@@ -11,10 +11,8 @@ import AWSMobileClient
 struct muster_point_clientApp: App {
     
     @ObservedObject var auth = AuthService()
-    //@UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
     
     init () {
-        configureLocation()
         configureAmplify()
         
         auth.checkSessionStatus()
@@ -45,24 +43,4 @@ struct muster_point_clientApp: App {
             print("Failed to initialize Amplify with \(error)")
         }
     }
-    
-    func configureLocation(){
-        // Override point for customization after application launch.
-        AWSMobileClient.default().initialize { (userState, error) in
-            if let userState = userState {
-                print("UserState: \(userState.rawValue)")
-            } else if let error = error {
-                print("error: \(error.localizedDescription)")
-            }
-        }
-    }
 }
-
-//class AppDelegate: NSObject, UIApplicationDelegate {
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//
-//
-//
-//        return true
-//    }
-//}

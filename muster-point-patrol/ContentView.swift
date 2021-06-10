@@ -48,12 +48,10 @@ struct ContentView: View {
     
     func queryUsers() {
         let u = User.keys
-        Amplify.DataStore.query(User.self, where: u.username !=  "patrol" && u.username != "fernsi") {
+        Amplify.DataStore.query(User.self) {
             result in
             switch result {
             case . success(let users):
-                print(users)
-                self.users = [User]()
                 self.users = users
             case .failure(let error):
                 print(error)
@@ -73,10 +71,6 @@ struct ContentView: View {
                 print("Subscription received mutation: \(changes)")
                 queryUsers()
             }
-    }
-    
-    init() {
-        
     }
 
 }
