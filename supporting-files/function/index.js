@@ -1,54 +1,83 @@
 /* Amplify Params - DO NOT EDIT
-  PARAMS WILL BE HERE - COPY FROM COMMENT DOWN
+  API_MUSTERPOINTLOCATIONAPI_GRAPHQLAPIENDPOINTOUTPUT
+  API_MUSTERPOINTLOCATIONAPI_GRAPHQLAPIIDOUTPUT
+  ENV
+  REGION
 Amplify Params - DO NOT EDIT */
-const AWS = require('aws-sdk');
-const graphqlQuery = require('./query.js').query;
-const graphqlUpdate = require('./update.js').update;
-const gql = require('graphql-tag');
-const AWSAppSyncClient = require('aws-appsync').default;
-require('es6-promise').polyfill();
-require('isomorphic-fetch');
 
-const url = process.env.<YOUR_ENDPOINT_FROM_PARAMS>;
-const region = process.env.REGION;
-AWS.config.update({
-  region,
-  credentials: new AWS.Credentials(
-    process.env.AWS_ACCESS_KEY_ID,
-    process.env.AWS_SECRET_ACCESS_KEY,
-    process.env.AWS_SESSION_TOKEN
-  ),
-});
-const credentials = AWS.config.credentials;
-const appsyncClient = new AWSAppSyncClient(
-  {
-    url,
-    region,
-    auth: {
-      type: 'AWS_IAM',
-      credentials,
-    },
-    disableOffline: true,
-  },
-  {
-    defaultOptions: {
-      query: {
-        fetchPolicy: 'network-only',
-        errorPolicy: 'all',
-      },
-    },
+const https = require('https')
+const AWS = require('aws-sdk')
+const urlParse = require('url').URL
+const region = process.env.REGION
+const appsyncUrl = process.env.API_MUSTERPOINTLOCATIONAPI_GRAPHQLAPIENDPOINTOUTPUT
+
+const request = (queryDetails, appsyncUrl, apiKey) => {
+  const req = new AWS.HttpRequest(appsyncUrl, region)
+  const endpoint = new urlParse(appsyncUrl).hostname.toString()
+
+  req.method = 'POST'
+  req.path = '/graphql'
+  req.headers.host = endpoint
+  req.headers['Content-Type'] = 'application/json'
+  req.body = JSON.stringify(queryDetails)
+
+  if (apiKey) {
+    req.headers['x-api-key'] = apiKey
+  } else {
+    const signer = new AWS.Signers.V4(req, 'appsync', true)
+    signer.addAuthorization(AWS.config.credentials, AWS.util.date.getDate())
   }
-);
+
+  return new Promise((resolve, reject) => {
+    const httpRequest = https.request({ ...req, host: endpoint }, (result) => {
+      result.on('data', (data) => {
+        resolve(JSON.parse(data.toString()))
+      })
+    })
+
+    httpRequest.write(req.body)
+    httpRequest.end()
+  })
+}
+
+const updateSafetyMutation = /* GraphQL */ `
+  mutation updateUser($input: UpdateUserInput!) {
+      updateUser(input: $input){
+        id
+        isSafe
+        username
+        _lastChangedAt
+        _version
+        _deleted
+      }
+    }
+`
+const queryUser = /* GraphQL */ `
+  query getUser($id: ID!) {
+        getUser (id: $id) {
+            id
+            username
+            isSafe
+            _version
+         }
+    }
+`
 
 exports.handler = async (event) => {
-	const userId = event?.detail?.DeviceId
-    
-  const queryRes = await appsyncClient.query({
-    query: gql(graphqlQuery),
-    variables: { id: userId }
-  });
+  const userId = event?.detail?.DeviceId
+  console.log('new geofence event:', event)
 
-  const user = queryRes?.data?.getUser
+  var queryResult = await request(
+      {
+        query: queryUser,
+        variables: { id: userId },
+      },
+      appsyncUrl
+    )
+  console.log('query result', queryResult)
+
+
+  const user = queryResult?.data?.getUser
   if (!user) {
     return {
       statusCode: 404,
@@ -56,24 +85,19 @@ exports.handler = async (event) => {
     };
   }
 
-  const mutation = gql(graphqlUpdate)
-
   const version = user?._version
-  const mutateRes = await appsyncClient.mutate({
-    mutation,
-    variables: { 
-    	input: {
-    		id: userId,
-    		isSafe: event?.detail?.EventType === "ENTER",
-    		_version: version
-    	}
-    }
-  });    
-
-  
-  response = {
-          statusCode: 200,
-          body: mutateRes,
-   };
-  return response;
-};
+  var result = await request(
+    {
+      query: updateSafetyMutation,
+      variables: {
+        input: {
+            id: userId,
+            isSafe: event?.detail?.EventType === "ENTER",
+            _version: version
+        },
+      },
+    },
+    appsyncUrl
+  )
+  console.log('appsync result', result)
+}
