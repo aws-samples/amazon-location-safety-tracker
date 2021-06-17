@@ -5,7 +5,7 @@ Location data is a vital ingredient in today's applications, enabling capabiliti
 With Amazon Location Service, you can easily add capabilities such as maps, points of interest, geocoding, routing, geofences, and tracking to applications. You retain control of your location data with Amazon Location, so you can combine proprietary data with data from the service. Amazon Location provides cost-effective location-based services (LBS) using high-quality data from global, trusted providers Esri and HERE Technologies.
 
 ## Architecture Overview
-<img src="/images/Location-Blog.png"/> 
+<img src="/images/architecture.png"/> 
 
 ## Stack
 - **Front-end** - SwiftUI, iOS 12+, AWS Amplify for authentication/authorization and API communication, AWS SDK for Amazon Location Service APIs
