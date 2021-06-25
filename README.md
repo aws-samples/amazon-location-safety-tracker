@@ -37,7 +37,7 @@ The first step of our solution consists of creating a new tracker and geofence c
     2. Description – Enter an optional description. 
 5.	Choose *Create geofence collection*. 
 
-You will now add the geofences that represent your muster points. These geofences are created using GeoJSON files. You can use tools, such as geojson.io, at no charge, to draw your geofences graphically and save the output GeoJSON file. With the file ready, we can populate our collection:
+You will now add the geofences that represent your muster points. These geofences are created using GeoJSON files. You can use tools, such as [geojson.io](https://geojson.io), at no charge, to draw your geofences graphically and save the output GeoJSON file. With the file ready, we can populate our collection:
 1.	Open the Amazon Location console at https://console.aws.amazon.com/location/
 2.	In the left navigation pane, choose *Geofence collections*. 
 3.	From the Geofence collections list, select the name link for the target geofence collection. 
