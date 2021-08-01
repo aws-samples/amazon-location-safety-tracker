@@ -210,6 +210,8 @@ amplify codegen models
 amplify push
 ```
 
+When the prompt asks "? Do you want to generate code for your newly created GraphQL API", select No.
+	
 Finally, we can add the last category, Function, to the project. This will create a Lambda function that will be triggered when the user crosses a Geofence created in Amazon Location Services.
 1.	Add the Function category by opening a terminal and running:
 
