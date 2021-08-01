@@ -20,7 +20,6 @@ abstract_target 'muster' do
     use_frameworks!
 
     # Pods for muster-point-client
-    pod 'AWSCore'
     pod 'AWSLocation' 
     pod 'AWSMobileClient'
   end
