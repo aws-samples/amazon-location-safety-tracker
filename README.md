@@ -323,6 +323,15 @@ xed .
 ```
 
 3.	Open the file *info.plist* inside the folder *muster-point-client*. Change the value of the key *TrackerName* and *GeofencesName* to the Tracker name and Geofence collection name created on **Setting up Amazon Location Services**.
+	
+4.	Open the file **LocationManager.swift* and replace the placeholders below with you Amazon Location tracker name and select the correct regions from the enum *AWSRegionType*.
+
+```swift
+let locationManager = CLLocationManager()
+    let locationTracker = AWSLocationTracker(trackerName: <YOUR-TRACKER-NAME>,
+                                             region: AWSRegionType.<YOUR-REGION>,
+                                             credentialsProvider: AWSMobileClient.default())
+```
 
 ### Create the Amazon EventBridge rule
 
