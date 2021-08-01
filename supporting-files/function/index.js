@@ -46,6 +46,8 @@ const updateSafetyMutation = /* GraphQL */ `
         id
         isSafe
         username
+        createdAt
+        updatedAt
         _lastChangedAt
         _version
         _deleted
