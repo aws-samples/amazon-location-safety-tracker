@@ -73,13 +73,54 @@ After you link the tracker resource, it will be assigned an **Active** status. T
 2.	Clone this code repository
 
 ```
-$ git clone git@github.com:aws-samples/amazon-location-service-musterpoint-tracker-ios.git
+git clone git@github.com:aws-samples/amazon-location-service-musterpoint-tracker-ios.git
 ```
 
 3.	Switch to the project's folder
 
 ```
-$ cd amazon-location-service-musterpoint-tracker-ios
+cd amazon-location-service-musterpoint-tracker-ios
+```
+
+4.	Initialize your project with the CocoaPods package manager by running the following command:
+
+```
+pod init 
+```
+
+5.	A new file named Podfile will be created. This file is used to describe your project’s packages dependency.
+
+6.	Open the Podfile in a file editor, and add  Amplify and Amazon Location as pod dependencies. When you’re done, your Podfile will look similar to this example:
+
+```
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+abstract_target 'muster' do
+
+  pod 'Amplify'
+  pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+  pod 'AmplifyPlugins/AWSAPIPlugin'
+  pod 'AmplifyPlugins/AWSDataStorePlugin'
+
+
+  target 'muster-point-patrol' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+
+  end
+
+  target 'muster-point-client' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for muster-point-client
+    pod 'AWSCore'
+    pod 'AWSLocation' 
+    pod 'AWSMobileClient'
+  end
+
+end
 ```
 
 4.	Run the following command to install the **Amplify Libraries** and the **AWS Location SDK**:
