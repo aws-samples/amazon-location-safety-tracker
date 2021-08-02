@@ -1,4 +1,4 @@
-## Muster Point Tracker
+## Amazon Location Safety Tracker
 
 Location data is a vital ingredient in today's applications, enabling capabilities ranging from asset tracking to location-based marketing.
 
