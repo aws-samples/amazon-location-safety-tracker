@@ -1,8 +1,8 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
 import Amplify
 import AWSLocation
 import AWSMobileClient
-// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-// SPDX-License-Identifier: MIT-0
 import CoreLocation
 
 class LocationManager: NSObject,
