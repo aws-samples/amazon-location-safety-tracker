@@ -73,13 +73,13 @@ After you link the tracker resource, it will be assigned an **Active** status. T
 2.	Clone this code repository
 
 ```
-git clone git@github.com:aws-samples/amazon-location-service-musterpoint-tracker-ios.git
+git clone git@github.com:aws-samples/amazon-location-safety-tracker.git
 ```
 
 3.	Switch to the project's folder
 
 ```
-cd amazon-location-service-musterpoint-tracker-ios
+cd amazon-location-safety-tracker
 ```
 
 4.	Initialize your project with the CocoaPods package manager by running the following command:
